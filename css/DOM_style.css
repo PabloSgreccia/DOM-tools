@@ -31,6 +31,42 @@ img{
 }
 
 
+/* ################### buttons ################### */
+.bottom-btn{
+    z-index: 999;
+    position: fixed;
+    bottom: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--second-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+#scroll-top-btn{
+    right: calc(4rem + 2vw);
+    transition: all 0.3s ease-out;
+}
+
+#scroll-top-btn:hover{
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
 /* ################### Burger Menu ################### */
 .header{
     position: sticky;
@@ -46,18 +82,7 @@ img{
 }
 
 .panel-btn{
-    z-index: 999;
-    position: fixed;
-    bottom: 1vh;
     right: 1vw;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--main-color);
 }
 
 .section{

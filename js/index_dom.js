@@ -2,6 +2,7 @@ import hamburgerMenu from "./DOM/hamurger_menu.js";
 import { setClock, setAlarm } from "./DOM/clock_alarm.js";
 import { shortcuts, moveBall } from "./DOM/keyboard_events.js";
 import countdown from "./DOM/countdown.js";
+import { scrollTopButton } from "./DOM/scroll_top_button.js";
 
 
 const d = document;
@@ -23,6 +24,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
         year = dayToday.getFullYear() + 1;
     } 
     countdown("countdown", `${stringMonth} ${day}, ${year} 00:00:00`, "Happy Birthday! 🤗");
+
+    scrollTopButton("scroll-top-btn", 500);
 });
 
 
