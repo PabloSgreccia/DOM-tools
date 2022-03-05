@@ -27,7 +27,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
     countdown("countdown", `${stringMonth} ${day}, ${year} 00:00:00`, "Happy Birthday! 🤗");
 
     scrollTopButton("scroll-top-btn", 500);
-    darkMode("#dark-mode-btn", "dark-mode", "dark-data");
 });
 
 
@@ -35,3 +34,5 @@ d.addEventListener("keydown", (e) => {
     shortcuts(e);
     moveBall(e, ".stage", ".ball")
 })
+
+darkMode("#dark-mode-btn", "dark-mode", "dark-data");
