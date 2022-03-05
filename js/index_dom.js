@@ -3,6 +3,7 @@ import { setClock, setAlarm } from "./DOM/clock_alarm.js";
 import { shortcuts, moveBall } from "./DOM/keyboard_events.js";
 import countdown from "./DOM/countdown.js";
 import { scrollTopButton } from "./DOM/scroll_top_button.js";
+import darkMode from "./DOM/dark_mode_btn.js";
 
 
 const d = document;
@@ -26,6 +27,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     countdown("countdown", `${stringMonth} ${day}, ${year} 00:00:00`, "Happy Birthday! 🤗");
 
     scrollTopButton("scroll-top-btn", 500);
+    darkMode("#dark-mode-btn", "dark-mode", "dark-data");
 });
 
 

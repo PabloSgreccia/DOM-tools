@@ -7,6 +7,7 @@
     --main-modal-color: rgba(154, 205, 50, 0.8);
     --second-modal-color: rgba(34, 34, 34, 0.8);
     --container-width: 90vw;
+    --main-dark-color: rgba(0, 0, 0, 0.8);
 }
 
 html{
@@ -31,7 +32,7 @@ img{
 }
 
 
-/* ################### buttons ################### */
+/* ################### Bottom Buttons ################### */
 .bottom-btn{
     z-index: 999;
     position: fixed;
@@ -52,12 +53,13 @@ img{
     border: 0;
 }
 
+/* ################### scroll-top ################### */
 #scroll-top-btn{
     right: calc(4rem + 2vw);
     transition: all 0.3s ease-out;
 }
 
-#scroll-top-btn:hover{
+#scroll-top-btn:hover {
     background-color: var(--second-color);
     color: var(--main-color);
 }
@@ -169,4 +171,20 @@ img{
     border-radius: 50%;
     background-color: var(--main-color);
     /* transition: all 0.1s ease; */
+}
+
+
+/* ################### dark-mode ################### */
+#dark-mode-btn {
+    left: 1vw;
+}
+
+#dark-mode-btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.dark-mode {
+    background-color: var(--main-dark-color);
+    color: var(--main-color);
 }
