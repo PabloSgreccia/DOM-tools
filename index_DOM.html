@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" 
+          integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/DOM-ejercicios.css">
+    <title>DOM Tools</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <h1 id="title">DOM Tools</h1>                
+    </header>
+
+    <!-- Boton Hamburguesa -->
+    <button class="panel-btn hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <!-- Menú -->
+    <aside class="panel">   
+        <nav class="menu">
+            <a href="#section1">Clock and Alarm</a>
+            <a href="#section2">Sección 2</a>
+            <a href="#section3">Sección 3</a>
+            <a href="#section4">Sección 4</a>
+            <a href="#section5">Sección 5</a>
+        </nav>
+    </aside>
+
+    <!-- secciones -->
+    <div class="section" id="section1">
+        <h2>Clock and Alarm</h2>
+        <div id="clock"></div>
+
+        <div id="clock-btns">
+            <button id="start-clock-btn">Start Clock</button>
+            <button id="stop-clock-btn">Stop Clock</button>    
+        </div>
+        <div id="alarm-btns">
+            <button id="start-alarm-btn">Start Alarm</button>
+            <button id="stop-alarm-btn">Stop Alarm</button>
+        </div>
+        
+    </div>
+    <div class="section" id="section2">
+        <h2>Sección 2</h2>
+    </div>
+    <div class="section" id="section3">
+        <h2>Sección 3</h2>
+    </div>
+    <div class="section" id="section4">
+        <h2>Sección 4</h2>
+    </div>
+    <div class="section" id="section5">
+        <h2>Sección 5</h2>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/index_dom.js" type="module"></script>
+</body>
+</html> 
