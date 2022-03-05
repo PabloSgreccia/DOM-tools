@@ -183,6 +183,30 @@ img{
     margin-bottom: 1rem;
 }
 
+/* ################### Form ################### */
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.form-inputs input{
+    width: 40%;
+    margin-bottom: 1vh;
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.form-buttons button{
+    margin-left: 0.5vw;
+}
+
 /* ################### dark-mode ################### */
 #dark-mode-btn {
     left: 1vw;

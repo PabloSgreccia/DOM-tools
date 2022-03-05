@@ -67,11 +67,20 @@
 
     <div class="section" id="section5">
         <h2>Responsive Tester</h2>
-        <!-- <form action="">
-            <input type="text" placeholder="Website">
-            <input type="text" placeholder="Height">
-            <input type="text" placeholder="Width">
-        </form> -->
+        <div class="card">
+            <p>Fill this form to test how renders a webPage with a determined size.</p>
+        </div>
+        <form id="responsive-tester-form">
+            <div class="form-inputs">
+                <input type="url" placeholder="Website URL" name="website" required>
+                <input type="number" placeholder="Height" name="height" required>
+                <input type="number" placeholder="Width" name="width" required>
+                <div class="form-buttons">
+                    <button type="submit">Test</button>
+                    <button type="button" name="close">Close</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- Buttons -->
