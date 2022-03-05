@@ -11,6 +11,5 @@ export default function hamburgerMenu(panelBtn, panel, menuLink) {
             d.querySelector(panel).classList.remove("is-active");
             d.querySelector(panelBtn).classList.remove("is-active");
         }
-        
     });
 }

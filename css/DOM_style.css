@@ -127,3 +127,21 @@ img{
 #alarm-btns{
     padding-top: 1%;
 }
+
+
+/* ################### Keyboard Events ################### */
+
+.stage {
+    display: flex;
+    min-height: 50vh;
+    background-color: var(--second-color);
+}
+
+.ball {
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    /* transition: all 0.1s ease; */
+}
