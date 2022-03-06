@@ -15,5 +15,4 @@ export default function returnWebcam(videoSelector){
                 $video.insertAdjacentHTML("beforebegin", `<h3>Se produjo el siguiente error: "${err}"</h3>`);
             });
     }
-
 }
