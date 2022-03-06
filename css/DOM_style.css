@@ -48,7 +48,6 @@ img{
     background-color: rgb(172, 0, 0);
 }
 
-
 /* ################### Information ################### */
 .information{
     margin-top: 2vh;
@@ -261,6 +260,11 @@ a{
     margin: 0;
 }
 
+/* ################### WebCam ################### */
+#webcam-video{
+    height: 60%;
+    width: 60%;
+}
 
 
 /* ################### dark-mode ################### */

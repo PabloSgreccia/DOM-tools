@@ -8,6 +8,7 @@ import responsiveContent from "./DOM/responsive.js";
 import responsiveTester from "./DOM/responsive_tester.js";
 import userDeviceInfo from "./DOM/device_detector.js";
 import detectConnection from "./DOM/connection_detector.js";
+import returnWebcam from "./DOM/webcam.js";
 
 
 const d = document;
@@ -46,6 +47,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     responsiveTester("#responsive-tester-form");
     userDeviceInfo("#user-device");
     detectConnection();
+    returnWebcam("#webcam-video")
 });
 
 
