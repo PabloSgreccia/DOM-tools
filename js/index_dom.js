@@ -11,6 +11,7 @@ import detectConnection from "./DOM/connection_detector.js";
 import returnWebcam from "./DOM/webcam.js";
 import returnGeolocation from "./DOM/geolocation.js";
 import filterImages from "./DOM/filter.js";
+import giveAway from "./DOM/giveaway.js";
 
 
 const d = document;
@@ -52,6 +53,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     returnWebcam("#webcam-video");
     returnGeolocation("#geolocation");
     filterImages("filter-images", ".card", "filter", "no-images-message");
+    giveAway("#giveaway-btn", ".player");
 });
 
 
