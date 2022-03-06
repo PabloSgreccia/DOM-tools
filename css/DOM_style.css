@@ -271,6 +271,26 @@ a{
     width: 60%;
 }
 
+/* ################### Filter ################### */
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: black;
+} 
+
+figcaption{
+    padding: 2vh 0px 2vh 0px;
+    color: var(--main-color);
+}
+
+.filter{
+    display: none;
+}
 
 /* ################### dark-mode ################### */
 #dark-mode-btn {
