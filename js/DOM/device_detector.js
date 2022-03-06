@@ -4,7 +4,6 @@ const ua = n.userAgent;
 
 export default function userDeviceInfo(selectorTag){
     const $selector = d.querySelector(selectorTag);
-    console.log($selector);
 
     const isMobile = {
         android: () => ua.match(/android/i),
@@ -44,9 +43,9 @@ export default function userDeviceInfo(selectorTag){
     </ul>
     `;
 
-    if(isBrowser.chrome())$selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isBrowser.firefox())$selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isBrowser.edge())$selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isMobile.any())$selector.innerHTML += `<br><p><mark>This content is only visible in a mobile device</mark></p>`;
+    if(isBrowser.chrome()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
+    if(isBrowser.firefox()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
+    if(isBrowser.edge()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
+    if(isMobile.any()) $selector.innerHTML += `<br><p><mark>This content is only visible in a mobile device</mark></p>`;
     if(isDesktop.any()) $selector.innerHTML += `<br><p><mark>This content is only visible in desktop mode</mark></p>`;
 }

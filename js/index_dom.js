@@ -7,6 +7,7 @@ import darkMode from "./DOM/dark_mode_btn.js";
 import responsiveContent from "./DOM/responsive.js";
 import responsiveTester from "./DOM/responsive_tester.js";
 import userDeviceInfo from "./DOM/device_detector.js";
+import detectConnection from "./DOM/connection_detector.js";
 
 
 const d = document;
@@ -44,6 +45,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     );
     responsiveTester("#responsive-tester-form");
     userDeviceInfo("#user-device");
+    detectConnection();
 });
 
 

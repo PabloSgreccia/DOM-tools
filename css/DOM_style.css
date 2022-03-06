@@ -31,6 +31,24 @@ img{
     height: auto;
 }
 
+/* ################### Connection ################### */
+.online, .offline{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: green;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.offline{
+    background-color: rgb(172, 0, 0);
+}
+
+
 /* ################### Information ################### */
 .information{
     margin-top: 2vh;
@@ -51,6 +69,7 @@ img{
 .information p{
     text-align: justify;
     padding-left: 1vw;
+    font-size: 12px;
 }
 
 a{
