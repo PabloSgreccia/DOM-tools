@@ -31,6 +31,31 @@ img{
     height: auto;
 }
 
+/* ################### Information ################### */
+.information{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(171, 198, 247);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.information img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.information p{
+    text-align: justify;
+    padding-left: 1vw;
+}
+
+a{
+    color: black;
+}
 
 /* ################### Bottom Buttons ################### */
 .bottom-btn{
@@ -175,7 +200,7 @@ img{
 
 
 /* ################### Responsive ################### */
-.card{
+.explication{
     padding: 2vh;
     background-color: rgb(192, 192, 192);
     color:black;
@@ -206,6 +231,18 @@ img{
 .form-buttons button{
     margin-left: 0.5vw;
 }
+
+/* ################### Device Detector ################### */
+#user-device li{
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+#user-device p{
+    margin: 0;
+}
+
+
 
 /* ################### dark-mode ################### */
 #dark-mode-btn {

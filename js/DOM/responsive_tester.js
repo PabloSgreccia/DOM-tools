@@ -20,15 +20,6 @@ export default function responsiveTester(form){
             $form.website.value = null;
             $form.height.value = null;
             $form.width.value = null;
-
         }
     });
-
-    // $form.addEventListener("reset", (e) => {
-    //     // e.preventDefault();
-    //     // $form.website.value = null;
-    //     // $form.height.value = null;
-    //     // $form.width.value = null;
-    // });
-
 }

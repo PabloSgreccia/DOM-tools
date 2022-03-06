@@ -6,6 +6,7 @@ import { scrollTopButton } from "./DOM/scroll_top_button.js";
 import darkMode from "./DOM/dark_mode_btn.js";
 import responsiveContent from "./DOM/responsive.js";
 import responsiveTester from "./DOM/responsive_tester.js";
+import userDeviceInfo from "./DOM/device_detector.js";
 
 
 const d = document;
@@ -42,6 +43,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
         `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13424.58365178562!2d-117.149046!3d32.735316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5df0f4372635e247!2sZool%C3%B3gico%20de%20San%20Diego!5e0!3m2!1ses-419!2sar!4v1646514670196!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
     );
     responsiveTester("#responsive-tester-form");
+    userDeviceInfo("#user-device");
 });
 
 
