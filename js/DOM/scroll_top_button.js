@@ -5,8 +5,8 @@ export function scrollTopButton(btnId, yAxis){
     let scrollTopButton = d.getElementById(btnId);
 
     w.addEventListener("scroll", (e) => {
-        let scrollPosition = w.pageYOffset || d.documentElement.scrollTop
-        if(w.pageYOffset >= yAxis){
+        let scrollPosition = w.pageYOffset || d.documentElement.scrollTop;
+        if(scrollPosition >= yAxis){
             scrollTopButton.classList.remove("hidden");
         } else {
             scrollTopButton.classList.add("hidden");

@@ -1,15 +1,15 @@
 const d = document;
 
-export function shortcuts(key){
-    if((key.key === "a") && (key.altKey === true)){
+export function shortcuts(keyEvent){
+    if((keyEvent.key === "a") && (keyEvent.altKey === true)){
         alert("Hi! i'm an alert.")
     }
     
-    if((key.key === "p") && (key.altKey === true)){
+    if((keyEvent.key === "p") && (keyEvent.altKey === true)){
         prompt("Hi! i'm a prompt.")
     }
     
-    if((key.key === "c") && (key.altKey === true)){
+    if((keyEvent.key === "c") && (keyEvent.altKey === true)){
         confirm("Hi! i'm a confirm.")
     }
 }

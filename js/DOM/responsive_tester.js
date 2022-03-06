@@ -14,7 +14,6 @@ export default function responsiveTester(form){
     });
 
     $form.addEventListener("click", (e) => {
-        console.log(e.target);
         if (e.target === $form.close) {
             tester.close();
             $form.website.value = null;
