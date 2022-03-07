@@ -16,6 +16,7 @@ import slicerEffects from "./DOM/slicer.js";
 import scrollSpy from "./DOM/scroll_observer.js";
 import smartVideo from "./DOM/smart_video.js";
 import formValidations from "./DOM/form_validations.js";
+import speaker from "./DOM/speaker.js";
 
 
 const d = document;
@@ -71,3 +72,4 @@ d.addEventListener("keydown", (e) => {
 })
 
 darkMode("#dark-mode-btn", "dark-mode", "dark-data");
+speaker();

@@ -446,6 +446,54 @@ figcaption{
     }
 }
 
+/* ################### speaker ################### */
+/* 
+speaker-div 
+    speaker-lang
+        label 
+        select
+            option            
+    textarea id="speaker-text"
+    button id="speaker-btn" */
+    
+.speaker-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.speaker-lang label{
+    font-size: 18px;
+}
+
+.speaker-lang select {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    font-size: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+.speaker-div #speaker-text {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    resize: none;
+    font-size: 15px;
+    padding: 0.5rem;
+    background-color: rgb(231, 231, 231);
+}
+
+.speaker-div #speaker-btn {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    width: 40%;
+    font-size: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
 /* ################### new-menu ################### */
 
 @media screen and (min-width: 1240px) {
