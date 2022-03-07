@@ -20,205 +20,208 @@
     <!-- Menu -->
     <aside class="panel">   
         <nav class="menu">
-            <a href="#section1">Clock and Alarm</a>
-            <a href="#section2">Keyboard Events</a>
-            <a href="#section3">Countdown</a>
-            <a href="#section4">Responsive Design</a>
-            <a href="#section5">Responsive Tester</a>
-            <a href="#section6">Device Detector</a>
-            <a href="#section7">Webcam</a>
-            <a href="#section8">Geolocation</a>
-            <a href="#section9">Filter</a>
-            <a href="#section10">Give Away</a>
-            <a href="#section11">Responsive Slider</a>
+            <a href="#section1" data-scroll-spy>Clock and Alarm</a>
+            <a href="#section2" data-scroll-spy>Keyboard Events</a>
+            <a href="#section3" data-scroll-spy>Countdown</a>
+            <a href="#section4" data-scroll-spy>Responsive Design</a>
+            <a href="#section5" data-scroll-spy>Responsive Tester</a>
+            <a href="#section6" data-scroll-spy>Device Detector</a>
+            <a href="#section7" data-scroll-spy>Webcam</a>
+            <a href="#section8" data-scroll-spy>Geolocation</a>
+            <a href="#section9" data-scroll-spy>Filter</a>
+            <a href="#section10" data-scroll-spy>Give Away</a>
+            <a href="#section11" data-scroll-spy>Responsive Slider</a>
         </nav>
     </aside>
 
     <!-- Sections -->
-    <div class="section" id="section1">
-        <h2>Clock and Alarm</h2>
-        <div id="clock"></div>
-
-        <div id="clock-btns">
-            <button id="start-clock-btn">Start Clock</button>
-            <button id="stop-clock-btn">Stop Clock</button>    
+    <main>
+        <div class="section" data-scroll-spy id="section1">
+            <h2>Clock and Alarm</h2>
+            <div id="clock"></div>
+    
+            <div id="clock-btns">
+                <button id="start-clock-btn">Start Clock</button>
+                <button id="stop-clock-btn">Stop Clock</button>    
+            </div>
+            <div id="alarm-btns">
+                <button id="start-alarm-btn">Start Alarm</button>
+                <button id="stop-alarm-btn">Stop Alarm</button>
+            </div>
+            
         </div>
-        <div id="alarm-btns">
-            <button id="start-alarm-btn">Start Alarm</button>
-            <button id="stop-alarm-btn">Stop Alarm</button>
+        <div class="section" data-scroll-spy id="section2">
+            <h2>Keyboard Events</h2>
+            <article class="stage">
+                <div class="ball"></div>
+            </article>
+        </div>
+    
+        <div class="section" data-scroll-spy id="section3">
+            <h2>My Birthday Countdown</h2>
+            <div id="countdown"></div>
+        </div>
+    
+        <div class="section" data-scroll-spy id="section4">
+            <h2>Responsive Design</h2>
+            <div class="explication">
+                <p>In a large screen, you will see a youtube video and an interactive map.</p>
+                <p>In a little screen (like a phone), you only will see a link to the youtube video and a link to the map.</p>    
+            </div>
+            <div id="video"></div>
+            <div id="map"></div>
+        </div>
+    
+        <div class="section" data-scroll-spy id="section5">
+            <h2>Responsive Tester</h2>
+            <div class="explication">
+                <p>Fill this form to test how renders a webPage with a determined size.</p>
+            </div>
+            <form id="responsive-tester-form">
+                <div class="form-inputs">
+                    <input type="url" placeholder="Website URL" name="website" required>
+                    <input type="number" placeholder="Height" name="height" required>
+                    <input type="number" placeholder="Width" name="width" required>
+                    <div class="form-buttons">
+                        <button type="submit">Test</button>
+                        <button type="button" name="close">Close</button>
+                    </div>
+                </div>
+            </form>
+            <div class="information">
+                <img src="./assets/icons8-acerca-de-50.png" alt="Information Icon">
+                <div class="information-text">
+                    <p>A Responsive Checker Tool helps the user test responsive web design. 
+                        It allows the user to verify if a website is being displayed properly across a wide range of devices, both desktop and mobile.</p>
+                </div>
+            </div>
         </div>
         
-    </div>
-    <div class="section" id="section2">
-        <h2>Keyboard Events</h2>
-        <article class="stage">
-            <div class="ball"></div>
-        </article>
-    </div>
-
-    <div class="section" id="section3">
-        <h2>My Birthday Countdown</h2>
-        <div id="countdown"></div>
-    </div>
-
-    <div class="section" id="section4">
-        <h2>Responsive Design</h2>
-        <div class="explication">
-            <p>In a large screen, you will see a youtube video and an interactive map.</p>
-            <p>In a little screen (like a phone), you only will see a link to the youtube video and a link to the map.</p>    
-        </div>
-        <div id="video"></div>
-        <div id="map"></div>
-    </div>
-
-    <div class="section" id="section5">
-        <h2>Responsive Tester</h2>
-        <div class="explication">
-            <p>Fill this form to test how renders a webPage with a determined size.</p>
-        </div>
-        <form id="responsive-tester-form">
-            <div class="form-inputs">
-                <input type="url" placeholder="Website URL" name="website" required>
-                <input type="number" placeholder="Height" name="height" required>
-                <input type="number" placeholder="Width" name="width" required>
-                <div class="form-buttons">
-                    <button type="submit">Test</button>
-                    <button type="button" name="close">Close</button>
+        <div class="section" data-scroll-spy id="section6">
+            <h2>Device Detector (User Agent)</h2>
+            <div id="user-device"></div>
+            <div class="information">
+                <img src="./assets/icons8-acerca-de-50.png" alt="Information Icon">
+                <div class="information-text">
+                    <p>This is a useful tool to show determined information depending on the user browser or device. 
+                        For example, you can show to download a software depending on the OS you are. </p>
+                    <p>You can watch this functionality working for github 
+                        <a href="https://desktop.github.com/" target="_blank" rel="noopener"><i>clicking here</i>
+                    </a>
                 </div>
             </div>
-        </form>
-        <div class="information">
-            <img src="./assets/icons8-acerca-de-50.png" alt="Information Icon">
-            <div class="information-text">
-                <p>A Responsive Checker Tool helps the user test responsive web design. 
-                    It allows the user to verify if a website is being displayed properly across a wide range of devices, both desktop and mobile.</p>
-            </div>
         </div>
-    </div>
     
-    <div class="section" id="section6">
-        <h2>Device Detector (User Agent)</h2>
-        <div id="user-device"></div>
-        <div class="information">
-            <img src="./assets/icons8-acerca-de-50.png" alt="Information Icon">
-            <div class="information-text">
-                <p>This is a useful tool to show determined information depending on the user browser or device. 
-                    For example, you can show to download a software depending on the OS you are. </p>
-                <p>You can watch this functionality working for github 
-                    <a href="https://desktop.github.com/" target="_blank" rel="noopener"><i>clicking here</i>
-                </a>
+        <div class="section" data-scroll-spy id="section7">
+            <h2>Webcam</h2>
+            <div id="webcam">
+                <video src="" id="webcam-video"></video>
             </div>
         </div>
-    </div>
-
-    <div class="section" id="section7">
-        <h2>Webcam</h2>
-        <div id="webcam">
-            <video src="" id="webcam-video"></video>
+    
+        <div class="section" data-scroll-spy id="section8">
+            <h2>Geolocation</h2>
+            <div id="geolocation"></div>
+            <iframe src="" frameborder="0" id="myiframe"></iframe>
         </div>
-    </div>
-
-    <div class="section" id="section8">
-        <h2>Geolocation</h2>
-        <div id="geolocation"></div>
-        <iframe src="" frameborder="0" id="myiframe"></iframe>
-    </div>
+        
+        <div class="section" data-scroll-spy id="section9">
+            <h2>Filter</h2>
+            <input type="search" placeholder="Filter" id="filter-images">
+            <div id="no-images-message"></div>
+            <article class="cards">
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/nature" alt="Nature">
+                    <figcaption>Nature</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/any" alt="Any">
+                    <figcaption>Any</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/tech" alt="Tech">
+                    <figcaption>Tech</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/animals" alt="Animals">
+                    <figcaption>Animals</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/people" alt="People">
+                    <figcaption>People</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/architecture" alt="Architecture">
+                    <figcaption>Architecture</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/random1" alt="Random1">
+                    <figcaption>Random1</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/random2" alt="Random2">
+                    <figcaption>Random2</figcaption>
+                </figure>
+            </article>
+        </div>
     
-    <div class="section" id="section9">
-        <h2>Filter</h2>
-        <input type="search" placeholder="Filter" id="filter-images">
-        <div id="no-images-message"></div>
-        <article class="cards">
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/nature" alt="Nature">
-                <figcaption>Nature</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/any" alt="Any">
-                <figcaption>Any</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/tech" alt="Tech">
-                <figcaption>Tech</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/animals" alt="Animals">
-                <figcaption>Animals</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/people" alt="People">
-                <figcaption>People</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/architecture" alt="Architecture">
-                <figcaption>Architecture</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/random1" alt="Random1">
-                <figcaption>Random1</figcaption>
-            </figure>
-            <figure class="card">
-                <img src="https://placeimg.com/200/200/random2" alt="Random2">
-                <figcaption>Random2</figcaption>
-            </figure>
-        </article>
-    </div>
-
-    <div class="section" id="section10">
-        <h2>Give Away</h2>
-        <ul class="players">
-            <li class="player">James</li>
-            <li class="player">Ann</li>
-            <li class="player">Steph</li>
-            <li class="player">Dirk</li>
-            <li class="player">Mike</li>
-            <li class="player">Carl</li>
-            <li class="player">Margaret</li>
-            <li class="player">Paul</li>
-            <li class="player">Kiley</li>
-            <li class="player">Lisa</li>            
-        </ul>
-        <input type="button" value="Choose a winner!" id="giveaway-btn">
-    </div>
-    
-    <div class="section" id="section11">
-        <h2>Responsive Slider</h2>
-        <div class="slider">
-            <div class="slider-slides">
-                <div class="slider-slide active">
-                    <img src="https://placeimg.com/400/400/animals" alt="Animals">
+        <div class="section" data-scroll-spy id="section10">
+            <h2>Give Away</h2>
+            <ul class="players">
+                <li class="player">James</li>
+                <li class="player">Ann</li>
+                <li class="player">Steph</li>
+                <li class="player">Dirk</li>
+                <li class="player">Mike</li>
+                <li class="player">Carl</li>
+                <li class="player">Margaret</li>
+                <li class="player">Paul</li>
+                <li class="player">Kiley</li>
+                <li class="player">Lisa</li>            
+            </ul>
+            <input type="button" value="Choose a winner!" id="giveaway-btn">
+        </div>
+        
+        <div class="section" data-scroll-spy id="section11">
+            <h2>Responsive Slider</h2>
+            <div class="slider">
+                <div class="slider-slides">
+                    <div class="slider-slide active">
+                        <img src="https://placeimg.com/400/400/animals" alt="Animals">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/400/400/nature" alt="Nature">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/400/400/people" alt="People">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/400/400/tech" alt="Tech">
+                    </div>
+                </div>            
+                <div class="slider-btns">
+                    <a href="#" class="slider-btn" id="slider-btn-left">&vltri;</a>
+                    <a href="#" class="slider-btn" id="slider-btn-right">&vrtri;</a>
                 </div>
-                <div class="slider-slide">
-                    <img src="https://placeimg.com/400/400/nature" alt="Nature">
-                </div>
-                <div class="slider-slide">
-                    <img src="https://placeimg.com/400/400/people" alt="People">
-                </div>
-                <div class="slider-slide">
-                    <img src="https://placeimg.com/400/400/tech" alt="Tech">
-                </div>
-            </div>            
-            <div class="slider-btns">
-                <a href="#" class="slider-btn" id="slider-btn-left">&vltri;</a>
-                <a href="#" class="slider-btn" id="slider-btn-right">&vrtri;</a>
             </div>
         </div>
-    </div>
+    </main>
     
     <!-- Buttons -->
-    <!-- Hamburger Button -->
-    <button class="panel-btn bottom-btn hamburger hamburger--spin" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-    </button>
-    <!-- Scroll to Top Button -->
-    <button class="bottom-btn hidden" id="scroll-top-btn" type="button">&#11014;</button>
-    <!-- Dark Mode Button -->
-    <button class="bottom-btn" id="dark-mode-btn" type="button">🌙</button>
+    <section>
+        <!-- Hamburger Button -->
+        <button class="panel-btn bottom-btn hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <!-- Scroll to Top Button -->
+        <button class="bottom-btn hidden" id="scroll-top-btn" type="button">&#11014;</button>
+        <!-- Dark Mode Button -->
+        <button class="bottom-btn" id="dark-mode-btn" type="button">🌙</button>
+    </section>
 
     <!-- Scripts -->
     <script src="./js/index_dom.js" type="module"></script>
-
 </body>
 </html> 

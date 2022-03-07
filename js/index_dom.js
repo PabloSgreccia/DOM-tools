@@ -13,6 +13,7 @@ import returnGeolocation from "./DOM/geolocation.js";
 import filterImages from "./DOM/filter.js";
 import giveAway from "./DOM/giveaway.js";
 import slicerEffects from "./DOM/slicer.js";
+import scrollSpy from "./DOM/scroll_observer.js";
 
 
 const d = document;
@@ -55,7 +56,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
     returnGeolocation("#geolocation");
     filterImages("filter-images", ".card", "filter", "no-images-message");
     giveAway("#giveaway-btn", ".player");
-    slicerEffects(".slider-slide", "#slider-btn-left", "#slider-btn-right")
+    slicerEffects(".slider-slide", "#slider-btn-left", "#slider-btn-right");
+    scrollSpy();
 });
 
 
