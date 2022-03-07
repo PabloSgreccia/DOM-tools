@@ -367,8 +367,86 @@ figcaption{
     color:rgb(34, 34, 34);
 }
 
+/* ################### Smart Video ################### */
+.smart-video{
+    max-width: 90%;
+}
 
-/* ################### dark-mode ################### */
+/* ################### Feedback Form ################### */
+#feedback-form{
+    --form-ok-color: green;
+    --form-error-color: rgb(172, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#feedback-form > * {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+#feedback-form textarea {
+    resize: none;
+}
+
+#feedback-form legend, .feedback-form-response{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#feedback-form input, #feedback-form textarea{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+#feedback-form input[type="submit"]{
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#feedback-form [required]:valid{
+    border: thin solid var(--form-ok-color);
+}
+
+#feedback-form [required]:invalid{
+    border: thin solid var(--form-error-color);
+}
+
+#feedback-form .feedback-form-error{
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+#feedback-form .none{
+    display: none;
+}
+
+#feedback-form .feedback-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* ################### new-menu ################### */
 
 @media screen and (min-width: 1240px) {
 

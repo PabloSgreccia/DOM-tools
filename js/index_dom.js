@@ -15,6 +15,7 @@ import giveAway from "./DOM/giveaway.js";
 import slicerEffects from "./DOM/slicer.js";
 import scrollSpy from "./DOM/scroll_observer.js";
 import smartVideo from "./DOM/smart_video.js";
+import formValidations from "./DOM/form_validations.js";
 
 
 const d = document;
@@ -60,6 +61,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     slicerEffects(".slider-slide", "#slider-btn-left", "#slider-btn-right");
     scrollSpy();
     smartVideo();
+    formValidations("#feedback-form");
 });
 
 

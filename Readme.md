@@ -9,3 +9,4 @@ Some tools that works with DOM:
     - device detector --> detects the devise and browser from where the user is connected. Then shows a message thats only shown in chrome, edge and firefox 
     - connection_detector --> listener who listens if you lost your connection and give and advise if this happens  
     - scroll observer --> hovers the menu section that the user is looking on the screen
+    - smart_video --> start playing a video when the screen is over it... if you move the screen or change the window, the video will pause

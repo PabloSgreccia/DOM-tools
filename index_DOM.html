@@ -32,6 +32,7 @@
             <a href="#section10" data-scroll-spy>Give Away</a>
             <a href="#section11" data-scroll-spy>Responsive Slider</a>
             <a href="#section12" data-scroll-spy>Smart Video</a>
+            <a href="#section13" data-scroll-spy>Form with validations</a>
         </nav>
     </aside>
 
@@ -209,7 +210,30 @@
         
         <div class="section" data-scroll-spy id="section12">
             <h2>Smart Video</h2>
-            <video src="./assets/videoplayback.mp4" muted controls loop data-smart-video></video>
+            <video src="./assets/videoplayback.mp4" muted controls loop data-smart-video class="smart-video"></video>
+        </div>
+        
+        <div class="section" data-scroll-spy id="section13">
+            <h2>Form with validations</h2>
+            <!-- <h3>Give us a feedback!</h3> -->
+            <form id="feedback-form">
+                <legend>Give us your feedback!</legend>
+                <input type="text" name="name" id="name" placeholder="Name" 
+                    title="Only letters and white spaces are allowed" pattern="^[a-zA-Z]+$" required>
+                <input type="email" name="email" id="email" placeholder="Email" 
+                    title="Write a correct email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" 
+                    title="Subject is required" required>
+                <textarea type="text" name="comment" id="comment" placeholder="Write your comment" cols="50" rows="5" 
+                    title="Your comment must have less than 250 characters" data-pattern="^.{1,255}$" required></textarea>
+                <input type="submit" value="Send" id="send">
+                <div class="none" id="feedback-form-loader">
+                    <img class="none" src="./assets/loader_oval.svg" alt="Loading">
+                </div>
+                <div class="feedback-form-response none">
+                    <p class="feedback-form-response none" >The data was sent</p>
+                </div>
+            </form>
         </div>
 
     </main>
