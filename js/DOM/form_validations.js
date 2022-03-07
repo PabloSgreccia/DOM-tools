@@ -29,6 +29,24 @@ export default function formValidations(formSelector){
                 ? $span.classList.add("is-active")
                 : $span.classList.remove("is-active");
         }
+    })
+
+    $form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let $loader = $form.querySelector("#feedback-form-loader");
+        $loader.classList.remove("none");
+        let $response = $form.querySelector(".feedback-form-response")
+
+        setTimeout(() => {
+            $loader.classList.add("none");
+            $response.classList.remove("none");
+            
+            setTimeout(() => {
+                $response.classList.add("none");                
+            }, 3000);
+
+        }, 3000);
 
     })
 
