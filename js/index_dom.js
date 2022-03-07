@@ -14,6 +14,7 @@ import filterImages from "./DOM/filter.js";
 import giveAway from "./DOM/giveaway.js";
 import slicerEffects from "./DOM/slicer.js";
 import scrollSpy from "./DOM/scroll_observer.js";
+import smartVideo from "./DOM/smart_video.js";
 
 
 const d = document;
@@ -58,6 +59,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     giveAway("#giveaway-btn", ".player");
     slicerEffects(".slider-slide", "#slider-btn-left", "#slider-btn-right");
     scrollSpy();
+    smartVideo();
 });
 
 

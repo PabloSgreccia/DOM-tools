@@ -5,11 +5,8 @@ export default function scrollSpy(){
     const $sections = d.querySelectorAll(".section[data-scroll-spy]");
 
     const callBack = (entries) => {
-        console.log("entries: ", entries);
-
         entries.forEach((entry) => {
             const id = entry.target.getAttribute("id");
-            console.log(id);
             if(entry.isIntersecting){
                 d.querySelector(`a[href="#${id}"][data-scroll-spy]`).classList.add("active");
             } else{
