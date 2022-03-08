@@ -12,3 +12,7 @@
 * smart_video --> start playing a video when the screen is over it... if you move the screen or change the window, the video will pause
 
 [*] webcam and geolocation only works with https protocol
+
+
+##### Demo:
+If you want to see a demo about how that funtionalities works, search the video "Demo.mp4" in "assets" folder.
