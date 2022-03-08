@@ -283,11 +283,12 @@ a{
 /* ################### Device Detector ################### */
 #user-device ul{
     padding-inline-start: 0.5rem;
+    /* justify-content: center; */
 }
 
 #user-device li{
     margin-bottom: 2vh;
-    text-align: left;
+    text-align: center;
 }
 
 #user-device p{
@@ -298,6 +299,12 @@ a{
 #webcam-video{
     height: 60%;
     width: 60%;
+}
+
+@media screen and (max-width: 1240px) {
+    #webcam-video{
+        width: 95%;
+    }
 }
 
 /* ################### Giveaway ################### */
@@ -412,7 +419,7 @@ figcaption{
 }
 
 .slicer-ref.active{
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(129, 129, 129);
     height: 16px;
     width: 23px;
 }
