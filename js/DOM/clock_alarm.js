@@ -22,6 +22,7 @@ export function setClock(clock, startClockBtn, stopClockBtn){
 export function setAlarm(sound, startSoundBtn, stopSoundBtn){
     let alarmTempo;
     const $alarm = d.createElement("audio");
+    $alarm.setAttribute("loop", "");
     $alarm.src = sound;
     
     d.addEventListener("click", (e) => {

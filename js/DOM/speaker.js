@@ -9,11 +9,17 @@ export default function speaker() {
         speakerMessage = new SpeechSynthesisUtterance();
 
     let voices = [];
-
-    d.addEventListener("DOMContentLoaded", (e)=> {
-
+    
+    d.addEventListener("DOMContentLoaded", (e)=> {                
         w.speechSynthesis.addEventListener("voiceschanged", (e)=>{
             voices = w.speechSynthesis.getVoices();
+
+            if(voices.length === 0){
+                $speakerText.value = "Sorry, we can't find possible voices in your browser.";
+            } else {
+                $speakerText.value = null;
+            }
+            
             voices.forEach(voice => {
                 const $option = d.createElement("option");
                 $option.value = voice.name;
@@ -27,6 +33,7 @@ export default function speaker() {
     d.addEventListener("change", (e)=>{
         if(e.target === $speakerSelect){
             speakerMessage.voice = voices.find(voice => voice.name === e.target.value);
+            console.log(speakerMessage);
         }
     })
     
@@ -35,6 +42,15 @@ export default function speaker() {
             speakerMessage.text = $speakerText.value;
             w.speechSynthesis.speak(speakerMessage)
         }
+
+        if(e.target === $speakerSelect){
+            if(voices.length === 0){
+                $speakerText.value = "Sorry, we can't find possible voices in your browser.";
+            } else {
+                $speakerText.value = null;
+            }
+        }
+
     })
 
 }

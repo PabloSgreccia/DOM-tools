@@ -1,6 +1,7 @@
 const d = document;
 
 export default function filterImages(filterId, selector, classDisplayNone, tagMessage){
+
     let $filter = d.getElementById(filterId);
 
     $filter.addEventListener("input", (e) => {

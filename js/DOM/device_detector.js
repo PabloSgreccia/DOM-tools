@@ -27,7 +27,7 @@ export default function userDeviceInfo(selectorTag){
         firefox: () => ua.match(/firefox/i),
         opera: () => ua.match(/opera|opera mini/i),
         ie: () => ua.match(/msie|iemobile/i),
-        edge: () => ua.match(/edge/i),
+        edge: () => ua.match(/edg/i),
         brave: () => ua.match(/brave/i),
         any: function() {
             return this.chrome() || this.safari() || this.firefox() || this.ie() || this.edge() || this.brave();
@@ -43,9 +43,10 @@ export default function userDeviceInfo(selectorTag){
     </ul>
     `;
 
-    if(isBrowser.chrome()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isBrowser.firefox()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isBrowser.edge()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
-    if(isMobile.any()) $selector.innerHTML += `<br><p><mark>This content is only visible in a mobile device</mark></p>`;
-    if(isDesktop.any()) $selector.innerHTML += `<br><p><mark>This content is only visible in desktop mode</mark></p>`;
+    if(isBrowser.edge()) $selector.innerHTML += `<p><mark>This content is only visible in Microsoft Edge</mark></p>`;
+    else if(isBrowser.firefox()) $selector.innerHTML += `<p><mark>This content is only visible in Firefox</mark></p>`;
+    else if(isBrowser.chrome()) $selector.innerHTML += `<p><mark>This content is only visible in Google Chrome</mark></p>`;
+    isMobile.any()
+        ? $selector.innerHTML += `<br><p><mark>This content is only visible in a mobile device</mark></p>`
+        : $selector.innerHTML += `<br><p><mark>This content is only visible in desktop mode</mark></p>`
 }

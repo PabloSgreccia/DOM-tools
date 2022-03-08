@@ -16,7 +16,7 @@ export default function returnGeolocation(geolocationSelector){
                 <p><b>Longitude:</b> ${position.coords.longitude}</p>
                 <p><b>Accuracy:</b> ${Math.floor(position.coords.accuracy)} Meters</p>
             </div>
-            <a href="https://www.google.com/maps/@${position.coords.latitude},${position.coords.longitude},15z" target="_blank" rel=""noopener>
+            <a href="https://www.google.com/maps/@${position.coords.latitude},${position.coords.longitude},18z" target="_blank" rel=""noopener>
                 Check it on Google Maps
             </a>
         `
