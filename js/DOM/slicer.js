@@ -5,6 +5,19 @@ export default function slicerEffects(slicerSelector, btnBefore, btnNext){
     let $btnBefore = d.querySelector(btnBefore);
     let $btnNext = d.querySelector(btnNext);
 
+    const $references = d.createElement("div");
+    $references.classList.add("slicer-refs");
+    $slicersSelector.forEach(el => {
+        const $reference = d.createElement("div");
+        $reference.classList.add("slicer-ref");
+        // $reference.textContent = "-";
+        $references.appendChild($reference);
+    });
+
+    d.querySelector(".slider").appendChild($references);
+    let $referencesSelector = d.querySelectorAll(".slicer-ref");
+    console.log($referencesSelector);
+
     let i = 0;
 
     let refresh;
@@ -13,10 +26,12 @@ export default function slicerEffects(slicerSelector, btnBefore, btnNext){
         refresh = {
             interval: setInterval(() => {
                 $slicersSelector[i].classList.remove("active");
+                $referencesSelector[i].classList.remove("active");
                 ((i + 1) > $slicersSelector.length - 1)
                     ? i = 0
                     : i++;
                 $slicersSelector[i].classList.add("active");
+                $referencesSelector[i].classList.add("active");
             }, 3000),
         } 
     }
@@ -28,10 +43,12 @@ export default function slicerEffects(slicerSelector, btnBefore, btnNext){
         if(e.target === $btnBefore){
             e.preventDefault();
             $slicersSelector[i].classList.remove("active");
-            ((i - 1) < 0) 
+                $referencesSelector[i].classList.remove("active");
+                ((i - 1) < 0) 
                 ? i = $slicersSelector.length - 1
                 : i--;
             $slicersSelector[i].classList.add("active");
+            $referencesSelector[i].classList.add("active");
 
             refInt();
         }
@@ -39,10 +56,12 @@ export default function slicerEffects(slicerSelector, btnBefore, btnNext){
         if(e.target === $btnNext){
             e.preventDefault();
             $slicersSelector[i].classList.remove("active");
-            ((i + 1) > $slicersSelector.length - 1)
+                $referencesSelector[i].classList.remove("active");
+                ((i + 1) > $slicersSelector.length - 1)
                 ? i = 0
                 : i++;
             $slicersSelector[i].classList.add("active");
+            $referencesSelector[i].classList.add("active");
         }
 
         refInt();

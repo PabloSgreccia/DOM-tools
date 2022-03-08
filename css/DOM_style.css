@@ -327,10 +327,10 @@ figcaption{
     display: none;
 }
 
-/* ################### Slider ################### */
+/* ################### Slicer ################### */
 .slider{
     position: relative;
-    width: 80%;    
+    width: 80%;
     margin: 1rem auto;
 }
 
@@ -391,6 +391,32 @@ figcaption{
     background-color: rgb(187, 187, 187);
     color:rgb(34, 34, 34);
 }
+
+.slicer-refs{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 10px;
+}
+
+.slicer-ref{
+    background-color: rgb(255, 255, 255);
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 10px;
+    width: 20px;
+    border-radius: 15px;
+}
+
+.slicer-ref.active{
+    background-color: rgb(187, 187, 187);
+    height: 16px;
+    width: 23px;
+}
+
 
 /* ################### Smart Video ################### */
 .smart-video{
