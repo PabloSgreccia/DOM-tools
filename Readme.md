@@ -16,7 +16,6 @@
 ![Responsive Design img](./assets/readme_assets/filter.jpg)
 * ***Smart Video:*** start playing a video when the screen is over it... if you move the screen or change the window, the video will pause.
 * ***Form With Validations:*** it's a form that displays errors depending on the input.
-![Form Validation](./assets/readme_assets/form_validation.gif)
 * ***Speaker:*** maked the browser talk depending on the language you choose.
 * ***Scroll Observer*** hovers the menu section that the user is on the screen.
 * ***Dark Mode:*** Dark mode theme.
