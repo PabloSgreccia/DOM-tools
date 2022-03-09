@@ -21,8 +21,8 @@
 * ***Dark Mode:*** Dark mode theme.
 * ***Scroll to Top Button:*** displays a button that moves the focus to the top of the page. 
 
-[*] webcam and geolocation only works with https protocol in mobile version.
+[*] in mobile mode, webcam and geolocation only works with https protocols. Here it's a video who explanis how to do it: [Go to youtube video](https://www.youtube.com/watch?v=v4jgr0ppw8Q)
 
 #### Demo:
-* If you want to see a demo about how that funtionalities works, search the video "demo.mp4" in "assets/readme_assets" folder: (./assets/readme_assets/demo.mp4)
+* If you want to see a demo about how that funtionalities works, search the video "demo.mp4" in "assets/readme_assets" folder, or [clicking here](./assets/readme_assets/demo.mp4)
 
