@@ -23,6 +23,8 @@
 
 [*] webcam and geolocation only works with https protocol in mobile version.
 
-
 #### Demo:
 * If you want to see a demo about how that funtionalities works, search the video "demo.mp4" in "assets/readme_assets" folder.
+
+![Responsive Design img](./assets/readme_assets/demo.mp4)
+
